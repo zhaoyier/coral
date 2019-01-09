@@ -1,0 +1,21 @@
+syntax="proto3";
+package apidoc;
+
+service Hello {
+  rpc Say(Request) returns(Response);
+}
+
+enum Product {
+  ProductUnknown = 0;
+  ProductOne = 1000;
+  ProductTwo = 1001;
+  ProductThree = 1002;
+  
+}
+
+message Request {
+  string req = 1;
+}
+message Response {
+  string reply = 1;
+}

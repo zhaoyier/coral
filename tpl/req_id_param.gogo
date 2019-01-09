@@ -1,0 +1,3 @@
+{{define "req_id_param"}}package{{.GoPackage}}
+  
+{{end}}
